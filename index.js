@@ -14,7 +14,7 @@ app.get('/instagram', function(req, res) {
 });
 
 app.get('/youtube', function(req, res) {
-    res.sendFile(__dirname + '/resources/html/youtube.html')
+    res.sendFile(__dirname + '/youtube.html')
 });
 
 app.get('/other', function(req, res) {
