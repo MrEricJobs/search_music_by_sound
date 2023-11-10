@@ -46,7 +46,7 @@ app.get('/youtube/youtube_downloader/download', (req, res) => {
     var format = req.query.format;
     if (format == '.mp4') {
         res.header('Content-Disposition', 'attachment; filename="video.mp4"');
-        ytdl(URL, {quality: 'lowestvideo'}).pipe(res);
+        ytdl(URL).pipe(res);
     }
     else if (format == '.mp3') {
         res.header('Content-Disposition', 'attachment; filename="audio.mp3"');
